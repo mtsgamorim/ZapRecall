@@ -80,8 +80,42 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;   
+}
+.cardFrontRed {
+    width: 300px;
+    height: 65px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.cardFrontYellow {
+    width: 300px;
+    height: 65px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.cardFrontGreen {
+    width: 300px;
+    height: 65px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
 }
 
 .cardFront span {
@@ -97,6 +131,58 @@ h1 {
     height: 26px;
     margin-right: 6px;
 }
+
+.cardFrontRed ion-icon {
+    width: 38px;
+    height: 26px;
+    margin-right: 6px;
+    color: #FF3030;
+}
+
+.cardFrontRed span {
+    font-family: 'Recursive', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #FF3030;
+    text-decoration: line-through;
+}
+
+.cardFrontYellow ion-icon {
+    width: 38px;
+    height: 26px;
+    margin-right: 6px;
+    color: #FF922E;
+}
+
+.cardFrontYellow span {
+    font-family: 'Recursive', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.cardFrontGreen ion-icon {
+    width: 38px;
+    height: 26px;
+    margin-right: 6px;
+    color: #2FBE34;
+}
+
+.cardFrontGreen span {
+    font-family: 'Recursive', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+
+
+
 
 
 .questionFace {
@@ -211,4 +297,8 @@ h1 {
     font-weight: 400;
     font-size: 18px;
     font-family: 'Recursive', sans-serif;
+}
+
+.iconesFooter {
+    display: flex;
 }

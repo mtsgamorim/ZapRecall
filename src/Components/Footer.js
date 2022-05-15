@@ -1,7 +1,11 @@
-export default function Foooter() {
+export default function Foooter(props) {
+
     return (
         <div className="footer">
-            <span>0/8 concluidos</span>
+            <span>{props.contador}/{props.tamanhoDeck} concluidos</span>
+            <div className="iconesFooter">
+                
+            </div>
         </div>
     )
 }
