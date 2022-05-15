@@ -1,8 +1,6 @@
 export default function Home({setTela}){
 
-    return (
-        <>
-            
+    return (  
             <div className="adjust">
                 <img className="primaryLogo" src="/image/logo.png" alt="Logo"/>
                 <h1>ZapRecall</h1>
@@ -10,8 +8,5 @@ export default function Home({setTela}){
                     <span>Iniciar Recall!</span>
                 </div>
             </div>
-            
-
-        </>
     )
 } 

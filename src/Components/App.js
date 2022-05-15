@@ -7,7 +7,7 @@ import Content from "./Content";
 
 
 export default function App() {
-    const [tela, setTela] = React.useState('i');
+    const [tela, setTela] = React.useState('init');
     return(
         <>
             {
