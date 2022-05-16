@@ -9,6 +9,12 @@ function Card(props) {
   const [yellowCss, setYellowCss] = React.useState(false);
   const [greenCss, setGreenCss] = React.useState(false);
 
+function itens(valor) {
+  valor.forEach((v) => props.icones.push(v));
+  return props.setIcones(props.icones);
+}
+  
+
   function red(){
     if(!travar){
       setTravar(true);
@@ -17,6 +23,8 @@ function Card(props) {
       setQuestion(false);
       setSemVolta(true);
       setRedCss(true);
+      itens([1]);
+      props.setTemErrada(true);
     }
   }
   function yellow(){
@@ -27,6 +35,7 @@ function Card(props) {
       setQuestion(false);
       setSemVolta(true);
       setYellowCss(true);
+      itens([2]);
     }
   }
 
@@ -38,15 +47,18 @@ function Card(props) {
       setQuestion(false);
       setSemVolta(true);
       setGreenCss(true);
+      itens([3]);
     }
   }
+
+  
 
   
   return (
     <>
       {
         !question && !answer && 
-        <div className={`${(!semVolta && "cardFront") || (semVolta && redCss && "cardFrontRed") || (semVolta && yellowCss && "cardFrontYellow") || (semVolta && greenCss && "cardFrontGreen")}`} onClick={() => setQuestion(semVolta ? false : true)}><span>Pergunta {props.pergunta}</span>
+        <div className={`${(!semVolta && "cardFront") || (semVolta && redCss && "cardFrontRed") || (semVolta && yellowCss && "cardFrontYellow") || (semVolta && greenCss && "cardFrontGreen")}`} onClick={() => setQuestion(semVolta ? false : true)}><span>Pergunta {props.indice + 1}</span>
           <ion-icon name={`${(!semVolta && "play-outline") || (semVolta && redCss && "close-circle") || (semVolta && yellowCss && "help-circle") || (semVolta && greenCss && "checkmark-circle")}`}>   </ion-icon>
         </div>
       }
@@ -81,10 +93,10 @@ function Card(props) {
 
 
 export default function Cards(props) {
-  
+   
   return (
     <>
-      {props.cards.map((card, index) => <Card key={index} pergunta={card.pergunta} question={card.question} answer={card.answer} setContador={props.setContador} contador={props.contador} />)}
+      {props.cards.map((card, index) => <Card key={index} indice={index} question={card.question} answer={card.answer} setContador={props.setContador} contador={props.contador} setIcones={props.setIcones} icones={props.icones} setTemErrada = {props.setTemErrada}/>)}
     </>
   )
 }

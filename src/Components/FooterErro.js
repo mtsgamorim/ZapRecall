@@ -1,11 +1,9 @@
-import React from "react";
-
-export default function Foooter(props) {
-    console.log(props.icones);
-
+export default function FooterErro(props) {
     return (
-        <div className="footer">
-            <span>{props.contador}/{props.tamanhoDeck} concluidos</span>
+        <div className="footerFinal">
+            <h6>😥 Putz... </h6>
+            <span>Ainda faltam alguns... Mas não desanime! </span>
+            <span className="espacar">{props.contador}/{props.tamanhoDeck} concluidos</span>
             <div className="iconesFooter">
                 {props.icones.map((i, index) => {return (
                     <div key={index}>
