@@ -64,9 +64,9 @@ function itens(valor) {
       }
       {
         question && !answer && 
-        <div className="questionFace" onClick={() => setAnswer(true)}>
+        <div className="questionFace" >
           <span>{props.question}</span>
-          <ion-icon name="reload-outline"></ion-icon>
+          <ion-icon onClick={() => setAnswer(true)} name="reload-outline"></ion-icon>
         </div>
       }
       {
