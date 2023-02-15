@@ -1,12 +1,7 @@
-# <p align = "center"> Projeto X </p>
-
-<p align="center">
-   <img src="https://user-images.githubusercontent.com/72531277/178094665-f46c6a55-c821-42a0-bb9c-d5dd5f2d69fa.png"/>
-</p>
+# <p align = "center"> Projeto ZapRecall </p>
 
 <p align = "center">
-   <img src="https://img.shields.io/badge/author-SEU_NOME-4dae71?style=flat-square" />
-   <img src="https://img.shields.io/github/languages/count/SEU_NOME/NOME_DO_PROJETO?color=4dae71&style=flat-square" />
+   <img src="https://img.shields.io/badge/author-Matheus_Amorim-4dae71?style=flat-square" />
 </p>
 
 ## :clipboard: Descrição
